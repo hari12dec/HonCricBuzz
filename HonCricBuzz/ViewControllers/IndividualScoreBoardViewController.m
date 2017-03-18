@@ -19,12 +19,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+	self.IndividualScoreBoardTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+	return 150;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -34,7 +40,6 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 
 	IndividualScoreTableViewCell *individualScore = [tableView dequeueReusableCellWithIdentifier:kCurrentIndividual];
-
 //	individualScore.matchKind.text = [NSString stringWithFormat:@"TEST"];
 //	individualScore.matchStatus.text = [NSString stringWithFormat:@"In Progress"];
 //	individualScore.seriesName.text = [NSString stringWithFormat:@"Austraila tour of India 2017"];
@@ -53,5 +58,9 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (IBAction)backAction:(id)sender {
+	[self dismissViewControllerAnimated:YES completion:nil];
+}
 
 @end

@@ -1,8 +1,7 @@
-TestName : "Aus Series"
-Score : "251"
-Overs : "99"
-Extras : 10
-BatMan:
-[
+{
 
-]
+"TestName" : "Aus Series"
+"Score" : "251"
+"Overs" : "99"
+"BatMan": "100"
+}

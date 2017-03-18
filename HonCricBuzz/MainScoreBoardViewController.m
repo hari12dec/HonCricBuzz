@@ -10,13 +10,17 @@
 #import "MainScoreTableViewCell.h"
 #import "MainScoreModel.h"
 #import "HonCricJSONParser.h"
+#import "HonCricScoreManager.h"
 
 #define kCellIdentifier @"HonMainCricCell"
 #define kDetailScore @"DetailScore"
 
-@interface MainScoreBoardViewController ()
+@interface MainScoreBoardViewController () <ScoreManager>
 {
 	NSArray *currentMatchs;
+	NSString *currentScore;
+	HonCricScoreManager *cricManager;
+
 	UIRefreshControl *scoreRefresh;
 }
 @end
@@ -27,6 +31,11 @@
 	[super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 
+	currentScore = @"--";
+
+	cricManager = [[HonCricScoreManager alloc]init];
+	cricManager.delegate = self;
+	[cricManager callLiveCricketScore];
 
 	scoreRefresh = [[UIRefreshControl alloc]init];
 	[mainScoreCardTableView addSubview:scoreRefresh];
@@ -34,31 +43,9 @@
 }
 
 - (void)refreshMainScore {
-	[scoreRefresh endRefreshing];
+	[cricManager callLiveCricketScore];
 }
 
-- (void)getMainScoreCard {
-
-	NSURL *URL = [NSURL URLWithString:@"http://example.com"];
-	NSURLRequest *request = [NSURLRequest requestWithURL:URL];
-
-	NSURLSession *session = [NSURLSession sharedSession];
-	NSURLSessionDataTask *task = [session dataTaskWithRequest:request
-										 completionHandler:
-							   ^(NSData *data, NSURLResponse *response, NSError *error) {
-								   // ...
-							   }];
-
-	[task resume];
-	//	[NSURLSession sendAsynchronousRequest:[[NSURLRequest alloc] initWithURL:url] queue:[[NSOperationQueue alloc] init] completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
-	//
-	//		if (error) {
-	//			[self.delegate fetchingGroupsFailedWithError:error];
-	//		} else {
-	//			[self.delegate receivedGroupsJSON:data];
-	//		}
-	//	}];
-}
 
 #pragma mark TableView Delegates and DataSources
 
@@ -73,19 +60,49 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 
 	MainScoreTableViewCell *scoreCell = [tableView dequeueReusableCellWithIdentifier:kCellIdentifier];
-	MainScoreModel *mainScore = [currentMatchs objectAtIndex:indexPath.row];
+	//MainScoreModel *scoreModel = [currentMatchs objectAtIndex:indexPath.row];
+
 	scoreCell.matchKind.text = [NSString stringWithFormat:@"TEST"];
 	scoreCell.matchStatus.text = [NSString stringWithFormat:@"In Progress"];
 	scoreCell.seriesName.text = [NSString stringWithFormat:@"Austraila tour of India 2017"];
 	scoreCell.teamNames.text = [NSString stringWithFormat:@"IND vs AUS"];
-	scoreCell.battingScore.text = [NSString stringWithFormat:@"IND 250/5"];
-	scoreCell.bowlOver.text = [NSString stringWithFormat:@"99.9 Over"];
+	scoreCell.battingScore.text = [NSString stringWithFormat:@"IND %@/0", currentScore];
+	scoreCell.bowlOver.text = [NSString stringWithFormat:@"32.5 Over"];
+
+	scoreCell.selectionStyle = UITableViewCellSelectionStyleNone;
 	return scoreCell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 
 	[self performSegueWithIdentifier:kDetailScore sender:nil];
+}
+
+#pragma mark - LiveScore Delegate
+
+- (void)getLiveScore:(NSArray *)scoreModel {
+//	if (scoreRefresh.isRefreshing) {
+		[scoreRefresh endRefreshing];
+//	}
+	currentMatchs = scoreModel;
+	[mainScoreCardTableView reloadData];
+}
+
+- (void)getLiveeScore:(NSString *)score {
+	score = [score stringByReplacingOccurrencesOfString:@"\"" withString:@""];
+	currentScore = score;
+	[mainScoreCardTableView reloadData];
+}
+
+- (void)unableToFetchLiveScore {
+	UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Error" message:@"Unable to fetch live score! /n Please try after some time" preferredStyle:UIAlertControllerStyleAlert];
+	UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * action){
+		// Ok action example
+	}];
+	[alert addAction:cancelAction];
+	[self presentViewController:alert animated:YES completion:^{
+
+	}];
 }
 
 - (void)didReceiveMemoryWarning {

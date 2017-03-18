@@ -7,37 +7,54 @@
 //
 
 #import "HonCricJSONParser.h"
+#import "MainScoreModel.h"
 
 @implementation HonCricJSONParser
 
-//+ (NSArray *)groupsFromJSON:(NSData *)objectNotation error:(NSError **)error
-//{
-//	NSError *localError = nil;
-//	NSDictionary *parsedObject = [NSJSONSerialization JSONObjectWithData:objectNotation options:0 error:&amp;localError];
-//
-//	if (localError != nil) {
-//		*error = localError;
-//		return nil;
-//	}
-//
-//	NSMutableArray *groups = [[NSMutableArray alloc] init];
-//
-//	NSArray *results = [parsedObject valueForKey:@"results"];
-//	NSLog(@"Count %d", results.count);
-//
-//	for (NSDictionary *groupDic in results) {
-//		Group *group = [[Group alloc] init];
-//
-//		for (NSString *key in groupDic) {
-//			if ([group respondsToSelector:NSSelectorFromString(key)]) {
-//				[group setValue:[groupDic valueForKey:key] forKey:key];
-//			}
-//		}
-//
-//		[groups addObject:group];
-//	}
-//
-//	return groups;
-//}
++ (NSArray *)groupsFromJSON:(NSData *)objectNotation;
+{
+	NSError *localError = nil;
+	NSArray *parsedObject = [NSJSONSerialization JSONObjectWithData:objectNotation options:0 error:&localError];
+
+	NSString *filePath = [[NSBundle mainBundle] pathForResource:@"MainScoreMock" ofType:@"json"];
+	NSData *data = [NSData dataWithContentsOfFile:filePath];
+
+	if (localError != nil) {
+		return nil;
+	}
+
+	NSMutableArray *groups = [[NSMutableArray alloc] init];
+
+	NSArray *results = [parsedObject valueForKey:@"results"];
+
+	for (NSDictionary *mainDic in results) {
+		MainScoreModel *mainScore = [[MainScoreModel alloc] init];
+
+		for (NSString *key in mainDic) {
+			if ([mainScore respondsToSelector:NSSelectorFromString(key)]) {
+				[mainScore setValue:[mainDic valueForKey:key] forKey:key];
+			}
+		}
+
+		[groups addObject:mainScore];
+	}
+
+	return groups;
+}
+
++ (NSString *)stringFromService:(NSData *)objectNotation {
+	NSString* newStr = [[NSString alloc] initWithData:objectNotation encoding:NSUTF8StringEncoding];
+
+
+	NSString *filePath = [[NSBundle mainBundle] pathForResource:@"MainScoreMock" ofType:@"json"];
+	NSData *data = [NSData dataWithContentsOfFile:filePath];
+
+	NSArray *parsedObject = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+
+
+	return newStr;
+}
+
+
 @end
 

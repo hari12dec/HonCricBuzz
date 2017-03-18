@@ -9,12 +9,10 @@
 #import <Foundation/Foundation.h>
 #import "HonCricScoreManager.h"
 
-@protocol ScoreParser <NSObject>
-
-- (void)fetchDataFromJSON:(NSData *)jsonData;
-
-@end
 
 @interface HonCricJSONParser : NSObject
+
++ (NSArray *)groupsFromJSON:(NSData *)objectNotation;
++ (NSString *)stringFromService:(NSData *)objectNotation;
 
 @end

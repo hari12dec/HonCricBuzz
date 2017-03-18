@@ -11,5 +11,6 @@
 @interface IndividualScoreBoardViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *IndividualScoreBoardTableView;
+- (IBAction)backAction:(id)sender;
 
 @end
