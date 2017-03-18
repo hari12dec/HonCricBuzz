@@ -1,0 +1,379 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C35998781E7CF86A00FBDAC0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C35998771E7CF86A00FBDAC0 /* main.m */; };
+		C359987B1E7CF86A00FBDAC0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C359987A1E7CF86A00FBDAC0 /* AppDelegate.m */; };
+		C359987E1E7CF86A00FBDAC0 /* MainScoreBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C359987D1E7CF86A00FBDAC0 /* MainScoreBoardViewController.m */; };
+		C35998811E7CF86A00FBDAC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C359987F1E7CF86A00FBDAC0 /* Main.storyboard */; };
+		C35998831E7CF86A00FBDAC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C35998821E7CF86A00FBDAC0 /* Assets.xcassets */; };
+		C35998861E7CF86A00FBDAC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C35998841E7CF86A00FBDAC0 /* LaunchScreen.storyboard */; };
+		C359988E1E7CFD6700FBDAC0 /* MainScoreMock in Resources */ = {isa = PBXBuildFile; fileRef = C359988D1E7CFD6700FBDAC0 /* MainScoreMock */; };
+		C35998921E7D07B600FBDAC0 /* IndividualScoreBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C35998911E7D07B600FBDAC0 /* IndividualScoreBoardViewController.m */; };
+		C35998981E7D0A2F00FBDAC0 /* MainScoreTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C35998971E7D0A2F00FBDAC0 /* MainScoreTableViewCell.m */; };
+		C359989C1E7D0C7B00FBDAC0 /* MainScoreModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C359989B1E7D0C7B00FBDAC0 /* MainScoreModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C35998731E7CF86A00FBDAC0 /* HonCricBuzz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HonCricBuzz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C35998771E7CF86A00FBDAC0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C35998791E7CF86A00FBDAC0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C359987A1E7CF86A00FBDAC0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C359987C1E7CF86A00FBDAC0 /* MainScoreBoardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainScoreBoardViewController.h; sourceTree = "<group>"; };
+		C359987D1E7CF86A00FBDAC0 /* MainScoreBoardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainScoreBoardViewController.m; sourceTree = "<group>"; };
+		C35998801E7CF86A00FBDAC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C35998821E7CF86A00FBDAC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C35998851E7CF86A00FBDAC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C35998871E7CF86A00FBDAC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C359988D1E7CFD6700FBDAC0 /* MainScoreMock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = MainScoreMock; path = MockServiceJSON/MainScoreMock; sourceTree = "<group>"; };
+		C35998901E7D07B600FBDAC0 /* IndividualScoreBoardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IndividualScoreBoardViewController.h; path = ViewControllers/IndividualScoreBoardViewController.h; sourceTree = "<group>"; };
+		C35998911E7D07B600FBDAC0 /* IndividualScoreBoardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IndividualScoreBoardViewController.m; path = ViewControllers/IndividualScoreBoardViewController.m; sourceTree = "<group>"; };
+		C35998961E7D0A2F00FBDAC0 /* MainScoreTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainScoreTableViewCell.h; path = TableViewCells/MainScoreTableViewCell.h; sourceTree = "<group>"; };
+		C35998971E7D0A2F00FBDAC0 /* MainScoreTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainScoreTableViewCell.m; path = TableViewCells/MainScoreTableViewCell.m; sourceTree = "<group>"; };
+		C359989A1E7D0C7B00FBDAC0 /* MainScoreModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainScoreModel.h; path = WebAPIModel/MainScoreModel.h; sourceTree = "<group>"; };
+		C359989B1E7D0C7B00FBDAC0 /* MainScoreModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainScoreModel.m; path = WebAPIModel/MainScoreModel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C35998701E7CF86A00FBDAC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C359986A1E7CF86A00FBDAC0 = {
+			isa = PBXGroup;
+			children = (
+				C35998751E7CF86A00FBDAC0 /* HonCricBuzz */,
+				C35998741E7CF86A00FBDAC0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C35998741E7CF86A00FBDAC0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C35998731E7CF86A00FBDAC0 /* HonCricBuzz.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C35998751E7CF86A00FBDAC0 /* HonCricBuzz */ = {
+			isa = PBXGroup;
+			children = (
+				C35998941E7D07CB00FBDAC0 /* AppDelegate */,
+				C35998931E7D07BF00FBDAC0 /* ViewControllers */,
+				C35998951E7D07D300FBDAC0 /* StoryBoards */,
+				C35998991E7D0A3800FBDAC0 /* TableViewCell */,
+				C359989D1E7D0C8100FBDAC0 /* WebAPIModel */,
+				C359988F1E7CFD7200FBDAC0 /* MockService */,
+				C35998821E7CF86A00FBDAC0 /* Assets.xcassets */,
+				C35998841E7CF86A00FBDAC0 /* LaunchScreen.storyboard */,
+				C35998871E7CF86A00FBDAC0 /* Info.plist */,
+				C35998761E7CF86A00FBDAC0 /* Supporting Files */,
+			);
+			path = HonCricBuzz;
+			sourceTree = "<group>";
+		};
+		C35998761E7CF86A00FBDAC0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C35998771E7CF86A00FBDAC0 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C359988F1E7CFD7200FBDAC0 /* MockService */ = {
+			isa = PBXGroup;
+			children = (
+				C359988D1E7CFD6700FBDAC0 /* MainScoreMock */,
+			);
+			name = MockService;
+			sourceTree = "<group>";
+		};
+		C35998931E7D07BF00FBDAC0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C359987C1E7CF86A00FBDAC0 /* MainScoreBoardViewController.h */,
+				C359987D1E7CF86A00FBDAC0 /* MainScoreBoardViewController.m */,
+				C35998901E7D07B600FBDAC0 /* IndividualScoreBoardViewController.h */,
+				C35998911E7D07B600FBDAC0 /* IndividualScoreBoardViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C35998941E7D07CB00FBDAC0 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				C35998791E7CF86A00FBDAC0 /* AppDelegate.h */,
+				C359987A1E7CF86A00FBDAC0 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		C35998951E7D07D300FBDAC0 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				C359987F1E7CF86A00FBDAC0 /* Main.storyboard */,
+			);
+			name = StoryBoards;
+			sourceTree = "<group>";
+		};
+		C35998991E7D0A3800FBDAC0 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				C35998961E7D0A2F00FBDAC0 /* MainScoreTableViewCell.h */,
+				C35998971E7D0A2F00FBDAC0 /* MainScoreTableViewCell.m */,
+			);
+			name = TableViewCell;
+			sourceTree = "<group>";
+		};
+		C359989D1E7D0C8100FBDAC0 /* WebAPIModel */ = {
+			isa = PBXGroup;
+			children = (
+				C359989A1E7D0C7B00FBDAC0 /* MainScoreModel.h */,
+				C359989B1E7D0C7B00FBDAC0 /* MainScoreModel.m */,
+			);
+			name = WebAPIModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C35998721E7CF86A00FBDAC0 /* HonCricBuzz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C359988A1E7CF86A00FBDAC0 /* Build configuration list for PBXNativeTarget "HonCricBuzz" */;
+			buildPhases = (
+				C359986F1E7CF86A00FBDAC0 /* Sources */,
+				C35998701E7CF86A00FBDAC0 /* Frameworks */,
+				C35998711E7CF86A00FBDAC0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HonCricBuzz;
+			productName = HonCricBuzz;
+			productReference = C35998731E7CF86A00FBDAC0 /* HonCricBuzz.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C359986B1E7CF86A00FBDAC0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = honeywell;
+				TargetAttributes = {
+					C35998721E7CF86A00FBDAC0 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = C359986E1E7CF86A00FBDAC0 /* Build configuration list for PBXProject "HonCricBuzz" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C359986A1E7CF86A00FBDAC0;
+			productRefGroup = C35998741E7CF86A00FBDAC0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C35998721E7CF86A00FBDAC0 /* HonCricBuzz */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C35998711E7CF86A00FBDAC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C359988E1E7CFD6700FBDAC0 /* MainScoreMock in Resources */,
+				C35998861E7CF86A00FBDAC0 /* LaunchScreen.storyboard in Resources */,
+				C35998831E7CF86A00FBDAC0 /* Assets.xcassets in Resources */,
+				C35998811E7CF86A00FBDAC0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C359986F1E7CF86A00FBDAC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C359987E1E7CF86A00FBDAC0 /* MainScoreBoardViewController.m in Sources */,
+				C359987B1E7CF86A00FBDAC0 /* AppDelegate.m in Sources */,
+				C35998781E7CF86A00FBDAC0 /* main.m in Sources */,
+				C359989C1E7D0C7B00FBDAC0 /* MainScoreModel.m in Sources */,
+				C35998921E7D07B600FBDAC0 /* IndividualScoreBoardViewController.m in Sources */,
+				C35998981E7D0A2F00FBDAC0 /* MainScoreTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C359987F1E7CF86A00FBDAC0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C35998801E7CF86A00FBDAC0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C35998841E7CF86A00FBDAC0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C35998851E7CF86A00FBDAC0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C35998881E7CF86A00FBDAC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C35998891E7CF86A00FBDAC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C359988B1E7CF86A00FBDAC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = HonCricBuzz/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.honeywell.HonCricBuzz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C359988C1E7CF86A00FBDAC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = HonCricBuzz/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.honeywell.HonCricBuzz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C359986E1E7CF86A00FBDAC0 /* Build configuration list for PBXProject "HonCricBuzz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C35998881E7CF86A00FBDAC0 /* Debug */,
+				C35998891E7CF86A00FBDAC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C359988A1E7CF86A00FBDAC0 /* Build configuration list for PBXNativeTarget "HonCricBuzz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C359988B1E7CF86A00FBDAC0 /* Debug */,
+				C359988C1E7CF86A00FBDAC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C359986B1E7CF86A00FBDAC0 /* Project object */;
+}
