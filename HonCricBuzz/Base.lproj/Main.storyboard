@@ -35,7 +35,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HonMainCricCell" rowHeight="167" id="XaD-IB-S0S">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HonMainCricCell" rowHeight="167" id="XaD-IB-S0S" customClass="MainScoreTableViewCell">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XaD-IB-S0S" id="Oud-ZE-N3Q">
@@ -148,12 +148,14 @@
                                                     <exclude reference="fEm-Tq-Gpo"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <exclude reference="m7f-mA-DMP"/>
-                                                    <exclude reference="w3b-fJ-kSe"/>
                                                     <exclude reference="0dv-h6-ADc"/>
                                                     <exclude reference="k2a-VJ-zhA"/>
+                                                    <exclude reference="m7f-mA-DMP"/>
+                                                    <exclude reference="w3b-fJ-kSe"/>
                                                     <exclude reference="Byg-S9-exW"/>
                                                     <exclude reference="mFt-12-D7e"/>
+                                                    <exclude reference="2XI-YJ-0Ld"/>
+                                                    <exclude reference="sXF-oS-xc9"/>
                                                     <exclude reference="ahV-vz-KZE"/>
                                                     <exclude reference="7vz-dd-DqP"/>
                                                     <exclude reference="HRu-bD-PfH"/>
@@ -161,8 +163,6 @@
                                                     <exclude reference="cxM-h5-KOZ"/>
                                                     <exclude reference="mwB-4P-Rmo"/>
                                                     <exclude reference="qc5-LW-yVL"/>
-                                                    <exclude reference="2XI-YJ-0Ld"/>
-                                                    <exclude reference="sXF-oS-xc9"/>
                                                 </mask>
                                             </variation>
                                             <variation key="heightClass=regular-widthClass=compact">
@@ -175,12 +175,14 @@
                                                     <include reference="fEm-Tq-Gpo"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <include reference="m7f-mA-DMP"/>
-                                                    <include reference="w3b-fJ-kSe"/>
                                                     <include reference="0dv-h6-ADc"/>
                                                     <include reference="k2a-VJ-zhA"/>
+                                                    <include reference="m7f-mA-DMP"/>
+                                                    <include reference="w3b-fJ-kSe"/>
                                                     <include reference="Byg-S9-exW"/>
                                                     <include reference="mFt-12-D7e"/>
+                                                    <include reference="2XI-YJ-0Ld"/>
+                                                    <include reference="sXF-oS-xc9"/>
                                                     <include reference="ahV-vz-KZE"/>
                                                     <include reference="7vz-dd-DqP"/>
                                                     <include reference="HRu-bD-PfH"/>
@@ -188,11 +190,17 @@
                                                     <include reference="cxM-h5-KOZ"/>
                                                     <include reference="mwB-4P-Rmo"/>
                                                     <include reference="qc5-LW-yVL"/>
-                                                    <include reference="2XI-YJ-0Ld"/>
-                                                    <include reference="sXF-oS-xc9"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="battingScore" destination="U4u-j8-SNS" id="hVc-rk-vQC"/>
+                                            <outlet property="bowlOver" destination="fEm-Tq-Gpo" id="UAT-Fb-S0I"/>
+                                            <outlet property="matchKind" destination="7UM-Qr-ZJY" id="GjN-Va-kcK"/>
+                                            <outlet property="matchStatus" destination="R5Y-Sq-QOj" id="FI7-bu-8kg"/>
+                                            <outlet property="seriesName" destination="20p-7d-DtA" id="rYr-iQ-K5s"/>
+                                            <outlet property="teamNames" destination="JBy-DH-QBI" id="TtG-JW-Xy3"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>

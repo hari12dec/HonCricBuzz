@@ -10,4 +10,11 @@
 
 @interface MainScoreTableViewCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UILabel *matchKind;
+@property (weak, nonatomic) IBOutlet UILabel *matchStatus;
+@property (weak, nonatomic) IBOutlet UILabel *seriesName;
+@property (weak, nonatomic) IBOutlet UILabel *teamNames;
+@property (weak, nonatomic) IBOutlet UILabel *battingScore;
+@property (weak, nonatomic) IBOutlet UILabel *bowlOver;
+
 @end
