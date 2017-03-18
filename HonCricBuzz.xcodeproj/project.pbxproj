@@ -13,11 +13,13 @@
 		C35998811E7CF86A00FBDAC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C359987F1E7CF86A00FBDAC0 /* Main.storyboard */; };
 		C35998831E7CF86A00FBDAC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C35998821E7CF86A00FBDAC0 /* Assets.xcassets */; };
 		C35998861E7CF86A00FBDAC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C35998841E7CF86A00FBDAC0 /* LaunchScreen.storyboard */; };
-		C359988E1E7CFD6700FBDAC0 /* MainScoreMock in Resources */ = {isa = PBXBuildFile; fileRef = C359988D1E7CFD6700FBDAC0 /* MainScoreMock */; };
+		C359988E1E7CFD6700FBDAC0 /* MainScoreMock.json in Resources */ = {isa = PBXBuildFile; fileRef = C359988D1E7CFD6700FBDAC0 /* MainScoreMock.json */; };
 		C35998921E7D07B600FBDAC0 /* IndividualScoreBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C35998911E7D07B600FBDAC0 /* IndividualScoreBoardViewController.m */; };
 		C35998981E7D0A2F00FBDAC0 /* MainScoreTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C35998971E7D0A2F00FBDAC0 /* MainScoreTableViewCell.m */; };
 		C359989C1E7D0C7B00FBDAC0 /* MainScoreModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C359989B1E7D0C7B00FBDAC0 /* MainScoreModel.m */; };
-		C35998A01E7D134E00FBDAC0 /* WebServiceParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C359989F1E7D134E00FBDAC0 /* WebServiceParser.m */; };
+		C35998A01E7D134E00FBDAC0 /* HonCricJSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C359989F1E7D134E00FBDAC0 /* HonCricJSONParser.m */; };
+		C35998A41E7D228500FBDAC0 /* HonCricScoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C35998A31E7D228500FBDAC0 /* HonCricScoreManager.m */; };
+		C35998A81E7D26A000FBDAC0 /* IndividualScoreTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C35998A71E7D26A000FBDAC0 /* IndividualScoreTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,15 +33,19 @@
 		C35998821E7CF86A00FBDAC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C35998851E7CF86A00FBDAC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C35998871E7CF86A00FBDAC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C359988D1E7CFD6700FBDAC0 /* MainScoreMock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = MainScoreMock; path = MockServiceJSON/MainScoreMock; sourceTree = "<group>"; };
+		C359988D1E7CFD6700FBDAC0 /* MainScoreMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = MainScoreMock.json; path = MockServiceJSON/MainScoreMock.json; sourceTree = "<group>"; };
 		C35998901E7D07B600FBDAC0 /* IndividualScoreBoardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IndividualScoreBoardViewController.h; path = ViewControllers/IndividualScoreBoardViewController.h; sourceTree = "<group>"; };
 		C35998911E7D07B600FBDAC0 /* IndividualScoreBoardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IndividualScoreBoardViewController.m; path = ViewControllers/IndividualScoreBoardViewController.m; sourceTree = "<group>"; };
 		C35998961E7D0A2F00FBDAC0 /* MainScoreTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainScoreTableViewCell.h; path = TableViewCells/MainScoreTableViewCell.h; sourceTree = "<group>"; };
 		C35998971E7D0A2F00FBDAC0 /* MainScoreTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainScoreTableViewCell.m; path = TableViewCells/MainScoreTableViewCell.m; sourceTree = "<group>"; };
 		C359989A1E7D0C7B00FBDAC0 /* MainScoreModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainScoreModel.h; path = WebAPIModel/MainScoreModel.h; sourceTree = "<group>"; };
 		C359989B1E7D0C7B00FBDAC0 /* MainScoreModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainScoreModel.m; path = WebAPIModel/MainScoreModel.m; sourceTree = "<group>"; };
-		C359989E1E7D134E00FBDAC0 /* WebServiceParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServiceParser.h; sourceTree = "<group>"; };
-		C359989F1E7D134E00FBDAC0 /* WebServiceParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebServiceParser.m; sourceTree = "<group>"; };
+		C359989E1E7D134E00FBDAC0 /* HonCricJSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HonCricJSONParser.h; sourceTree = "<group>"; };
+		C359989F1E7D134E00FBDAC0 /* HonCricJSONParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HonCricJSONParser.m; sourceTree = "<group>"; };
+		C35998A21E7D228500FBDAC0 /* HonCricScoreManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HonCricScoreManager.h; path = ServiceManager/HonCricScoreManager.h; sourceTree = "<group>"; };
+		C35998A31E7D228500FBDAC0 /* HonCricScoreManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HonCricScoreManager.m; path = ServiceManager/HonCricScoreManager.m; sourceTree = "<group>"; };
+		C35998A61E7D26A000FBDAC0 /* IndividualScoreTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IndividualScoreTableViewCell.h; path = TableViewCells/IndividualScoreTableViewCell.h; sourceTree = "<group>"; };
+		C35998A71E7D26A000FBDAC0 /* IndividualScoreTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IndividualScoreTableViewCell.m; path = TableViewCells/IndividualScoreTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,7 @@
 				C35998951E7D07D300FBDAC0 /* StoryBoards */,
 				C35998991E7D0A3800FBDAC0 /* TableViewCell */,
 				C359989D1E7D0C8100FBDAC0 /* WebAPIModel */,
+				C35998A51E7D228900FBDAC0 /* ServiceManager */,
 				C35998A11E7D135400FBDAC0 /* Parser */,
 				C359988F1E7CFD7200FBDAC0 /* MockService */,
 				C35998821E7CF86A00FBDAC0 /* Assets.xcassets */,
@@ -98,7 +105,7 @@
 		C359988F1E7CFD7200FBDAC0 /* MockService */ = {
 			isa = PBXGroup;
 			children = (
-				C359988D1E7CFD6700FBDAC0 /* MainScoreMock */,
+				C359988D1E7CFD6700FBDAC0 /* MainScoreMock.json */,
 			);
 			name = MockService;
 			sourceTree = "<group>";
@@ -136,6 +143,8 @@
 			children = (
 				C35998961E7D0A2F00FBDAC0 /* MainScoreTableViewCell.h */,
 				C35998971E7D0A2F00FBDAC0 /* MainScoreTableViewCell.m */,
+				C35998A61E7D26A000FBDAC0 /* IndividualScoreTableViewCell.h */,
+				C35998A71E7D26A000FBDAC0 /* IndividualScoreTableViewCell.m */,
 			);
 			name = TableViewCell;
 			sourceTree = "<group>";
@@ -152,10 +161,19 @@
 		C35998A11E7D135400FBDAC0 /* Parser */ = {
 			isa = PBXGroup;
 			children = (
-				C359989E1E7D134E00FBDAC0 /* WebServiceParser.h */,
-				C359989F1E7D134E00FBDAC0 /* WebServiceParser.m */,
+				C359989E1E7D134E00FBDAC0 /* HonCricJSONParser.h */,
+				C359989F1E7D134E00FBDAC0 /* HonCricJSONParser.m */,
 			);
 			name = Parser;
+			sourceTree = "<group>";
+		};
+		C35998A51E7D228900FBDAC0 /* ServiceManager */ = {
+			isa = PBXGroup;
+			children = (
+				C35998A21E7D228500FBDAC0 /* HonCricScoreManager.h */,
+				C35998A31E7D228500FBDAC0 /* HonCricScoreManager.m */,
+			);
+			name = ServiceManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,7 +233,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C359988E1E7CFD6700FBDAC0 /* MainScoreMock in Resources */,
+				C359988E1E7CFD6700FBDAC0 /* MainScoreMock.json in Resources */,
 				C35998861E7CF86A00FBDAC0 /* LaunchScreen.storyboard in Resources */,
 				C35998831E7CF86A00FBDAC0 /* Assets.xcassets in Resources */,
 				C35998811E7CF86A00FBDAC0 /* Main.storyboard in Resources */,
@@ -233,7 +251,9 @@
 				C359987B1E7CF86A00FBDAC0 /* AppDelegate.m in Sources */,
 				C35998781E7CF86A00FBDAC0 /* main.m in Sources */,
 				C359989C1E7D0C7B00FBDAC0 /* MainScoreModel.m in Sources */,
-				C35998A01E7D134E00FBDAC0 /* WebServiceParser.m in Sources */,
+				C35998A01E7D134E00FBDAC0 /* HonCricJSONParser.m in Sources */,
+				C35998A81E7D26A000FBDAC0 /* IndividualScoreTableViewCell.m in Sources */,
+				C35998A41E7D228500FBDAC0 /* HonCricScoreManager.m in Sources */,
 				C35998921E7D07B600FBDAC0 /* IndividualScoreBoardViewController.m in Sources */,
 				C35998981E7D0A2F00FBDAC0 /* MainScoreTableViewCell.m in Sources */,
 			);

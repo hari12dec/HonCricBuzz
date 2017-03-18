@@ -7,6 +7,9 @@
 //
 
 #import "IndividualScoreBoardViewController.h"
+#import "IndividualScoreTableViewCell.h"
+
+#define kCurrentIndividual @"CurrentIndividual"
 
 @interface IndividualScoreBoardViewController ()
 
@@ -22,6 +25,23 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+	return 1;//currentMatchs.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+
+	IndividualScoreTableViewCell *individualScore = [tableView dequeueReusableCellWithIdentifier:kCurrentIndividual];
+
+//	individualScore.matchKind.text = [NSString stringWithFormat:@"TEST"];
+//	individualScore.matchStatus.text = [NSString stringWithFormat:@"In Progress"];
+//	individualScore.seriesName.text = [NSString stringWithFormat:@"Austraila tour of India 2017"];
+//	individualScore.teamNames.text = [NSString stringWithFormat:@"IND vs AUS"];
+//	individualScore.battingScore.text = [NSString stringWithFormat:@"IND 250/5"];
+//	individualScore.bowlOver.text = [NSString stringWithFormat:@"99.9 Over"];
+	return individualScore;
 }
 
 /*

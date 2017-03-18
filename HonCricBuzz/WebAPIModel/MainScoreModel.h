@@ -10,4 +10,11 @@
 
 @interface MainScoreModel : NSObject
 
+@property (strong, nonatomic) NSString *matchKind;
+@property (strong, nonatomic) NSString *matchStatus;
+@property (strong, nonatomic) NSString *seriesName;
+@property (strong, nonatomic) NSString *teamNames;
+@property (strong, nonatomic) NSString *battingScore;
+@property (strong, nonatomic) NSString *bowlOver;
+
 @end
